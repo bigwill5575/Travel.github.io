@@ -1,0 +1,356 @@
+<html>
+
+<head>
+
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Changa:wght@600;700;800&family=Noto+Sans+Symbols:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Changa:wght@600;700;800&family=Noto+Sans+Symbols:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;700&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #2f4715;
+
+        }
+
+        .banner {
+            background-image: linear-gradient(rgba(14, 14, 14, 0.412), rgba(28, 27, 27, 0.763)), url(329647.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 220vh;
+            width: 100%;
+        }
+
+        .planelogo {
+            display: block;
+            height: 85px;
+            transition-duration: 0.6s;
+
+        }
+
+        .planelogo:hover {
+            cursor: pointer;
+            transform: rotate(360deg);
+        }
+
+        .travellogo {
+            cursor: pointer;
+        }
+
+        .logo {
+            display: flex;
+            font-family: alkatra;
+            color: white;
+            margin-left: 50px;
+
+
+        }
+
+        .navbar {
+            backdrop-filter: blur(2px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .threeitems a {
+            text-decoration: none;
+            color: white;
+            font-family: arial;
+            font-weight: bolder;
+
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.229);
+            padding: 8px;
+            border-radius: 20px;
+        }
+
+        .threeitems {
+            word-spacing: 90px;
+            margin-right: 50px;
+        }
+
+        .threeitems a:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .login {
+            background: rgb(255, 255, 255);
+            padding: 8px;
+            border-radius: 20px;
+            transition-duration: 0.4s;
+            margin-left: 20px;
+            margin-right: 70px;
+
+        }
+
+        .login a {
+            text-decoration: none;
+            font-family: arial;
+            font-weight: bolder;
+            color: rgba(0, 0, 0, 0.8);
+            transition-duration: 0.6s;
+        }
+
+        .login:hover {
+            background: rgba(255, 255, 255, 0);
+
+
+        }
+
+        .login a:hover {
+            color: white;
+        }
+
+        .quote {
+            color: white;
+            font-family: noto sans symbols;
+            line-height: 40px;
+            text-align: center;
+            margin-top: 200px;
+            font-size: 25px;
+            font-weight: 100;
+
+        }
+
+        .arrowdown {
+            display: block;
+            height: 15px;
+            margin-inline: auto;
+        }
+
+        .scroll {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .one {
+            background: rgba(0, 0, 0, 0.279);
+            backdrop-filter: blur(16px);
+            font-family: noto sans symbols;
+            padding: 140px;
+            color: white;
+            font-weight: 450;
+            line-height: 25px;
+            border-radius: 45px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .onetext {
+            text-align: center;
+        }
+
+        .hikingmountain {
+            display: block;
+            height: 250px;
+            border-radius: 25px;
+            transition-duration: 0.4s;
+        }
+
+        .hikingmountain:hover {
+            transform: scale(1.2);
+        }
+
+        .two {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .three {
+            color: white;
+            font-family: noto sans symbols;
+            text-align: center;
+            background: #2f4715;
+            padding: 80px;
+            
+        }
+        .twopplhiking{
+            display:block;
+            height: 50vh;
+            border-radius: 25px;
+            margin: auto;
+            margin-top: 40px;
+        }
+        .bannertwo{
+            background: linear-gradient(to right,rgba(14, 14, 14, 0.752), rgba(28, 27, 27, 0.379)), url(944008.jpg);
+            height: 70vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items:center;
+            justify-content: space-evenly;
+            color: white;
+            font-family: noto sans symbols;
+        }
+        
+        .bird{
+            display: block;
+            height: 250px;
+            border-radius: 25px;
+            transition-duration: 0.4s;
+        }
+        .bird:hover{
+            transform: scale(1.2);
+        }
+        .reviewbox{
+            color: white;
+            font-family: arial;
+            text-align: center;
+        
+            font-size: 20px;
+            background: rgba(24, 24, 24, 0.995);
+            backdrop-filter: blur(20px) ;
+            margin: auto;
+            padding: 40px;
+            border-radius: 27px;
+            width: 15%;
+            
+        }
+        .reviewbox a{
+            text-decoration: none;
+            font-weight: bolder;
+            color: rgb(0, 0, 0);
+            background: white;
+            padding: 8px;
+            border-radius: 20px;
+            font-size: 14px;
+            transition-duration: 0.3s;
+        }
+        .reviewbox a:hover{
+            background: rgba(255, 255, 255, 0);
+            color: white;
+        }
+        .reviewbox p{
+            text-decoration: underline;
+        }
+        .threeitemsend a{
+            text-decoration: none;
+            color: white;
+        }
+        .threeitemsend{
+            text-align: center;
+            word-spacing: 60px;
+            font-family: arial;
+            
+            padding: 20px;
+        }
+        .threeitemsend a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <div class="logo">
+                <img src="plane logo.png" class="planelogo">
+                <h1 class="travellogo">TRAVEL</h1>
+            </div>
+            <div class="threeitems">
+                <a href="index.html" class="home">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="content.html" class="content">CONTENT</a>
+            </div>
+            <div class="login">
+                <a href="login.html">Login</a>
+
+            </div>
+        </div>
+
+        <div class="quote">
+            <h2>"Travel far, travel wide, travel deep. <br> Explore the world and let it seep into your soul."
+            </h2>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="scroll">
+            <P>SCROLL DOWN FOR MORE INFORMATION</P>
+            <img src="toppng.com-white-drop-down-arrow-423x265.png" class="arrowdown">
+        </div>
+        <br><br><br><br>
+        <div class="one">
+            <p class="onetext">
+                Our website is filled with detailed guides on various destinations around the world! <br>
+                Whether you're looking for a beach getaway, a city escape, or an adventurous trek, you'll find
+                information on your dream spots, local attractions, must-see landmarks, and more.
+            </p>
+            <br><br><br><br><br>
+            <div class="two">
+                <p class="twotext">
+                    We provide expert travel tips to help you make the most out of your trip. <br> From packing
+                    essentials to money-saving hacks,
+                    safety precautions to cultural etiquette,<br> our website offers practical advice to ensure you have
+                    a smooth and enjoyable journey.
+                </p>
+                <img src="oip22dba.png" class="hikingmountain">
+            </div>
+        </div>
+
+    </div>
+    <div class="three">
+        <p>
+            We feature the latest travel deals and promotions to help you save money on flights, hotels, tours, and
+            more.
+            Our website is regularly updated with exclusive discounts and offers to help you get the best value for your
+            money.
+        </p>
+        <img src="OIP (2).jpg" class="twopplhiking">
+    </div>
+    <div class="bannertwo">
+    
+        <div class="four">
+            <p>
+                We listen to every single travellers and make the experience better. <br>
+                So, you are welcome to review the experience after the grate seek of the nature!
+            </p>
+        </div>
+        <img src="695100.jpg" class="bird">
+        
+    </div>
+    <br><br><br><br><br><br>
+    <div class="five">
+        <div class="reviewbox">
+            <h4>
+                You can review here!
+            </h4>
+            <label for="username">Write Here!</label><br>
+            <input type="text"><br><br>
+            <label for="username">Also enter your user name</label><br>
+            <input type="password"><br><br><br>
+            <p>Your review will be recorded automatically</p>
+            <a href="#">Review</a>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="threeitemsend">
+        <a href="index.html" class="home">HOME</a>
+        <a href="about.html" class="about">ABOUT</a>
+        <a href="content.html" class="content">CONTENT</a>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>

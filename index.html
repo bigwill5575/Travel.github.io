@@ -1,0 +1,276 @@
+<html>
+
+<head>
+    <title>
+        TravelWithUs
+    </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Changa:wght@600;700;800&family=Noto+Sans+Symbols:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Changa:wght@600;700;800&family=Noto+Sans+Symbols:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;700&display=swap');
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            background: rgba(0, 25, 8, 0.922);
+            
+        }
+        
+        .banner {
+            background-image: linear-gradient(rgba(14, 14, 14, 0.282), rgba(28, 27, 27, 0.697)), url(1020670.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 105vh;
+            width: 100%;
+        }
+
+        .planelogo {
+            display: block;
+            height: 85px;
+            transition-duration: 0.6s;
+
+        }
+
+        .planelogo:hover {
+            cursor: pointer;
+            transform: rotate(360deg);
+        }
+
+        .travellogo {
+            cursor: pointer;
+        }
+
+        .logo {
+            display: flex;
+            font-family: alkatra;
+            color: white;
+            margin-left: 50px;
+
+
+        }
+
+        .navbar {
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+
+        .threeitems a {
+            text-decoration: none;
+            color: white;
+            font-family: arial;
+            font-weight: bolder;
+
+        }
+        .home{
+            background: rgba(255, 255, 255, 0.229);
+            padding: 8px;
+            border-radius: 20px;
+        }
+
+        .threeitems {
+            word-spacing: 90px;
+            margin-right: 50px;
+        }
+
+        .threeitems a:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .login {
+            background: rgb(255, 255, 255);
+            padding: 8px;
+            border-radius: 20px;
+            transition-duration: 0.4s;
+            margin-left: 20px;
+            margin-right: 70px;
+
+        }
+
+        .login a {
+            text-decoration: none;
+            font-family: arial;
+            font-weight: bolder;
+            color: rgba(0, 0, 0, 0.8);
+            transition-duration: 0.6s;
+        }
+
+        .login:hover {
+            background: rgba(255, 255, 255, 0);
+
+
+        }
+
+        .login a:hover {
+            color: white;
+        }
+
+        .quote {
+            color: white;
+            font-family: noto sans symbols;
+            line-height: 40px;
+            text-align: center;
+            margin-top: 200px;
+            font-size: 25px;
+            font-weight: 100;
+
+        }
+
+        .arrowdown {
+            display: block;
+            height: 15px;
+            margin-inline: auto;
+        }
+
+        .scroll {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 12px;
+        }
+        .womanjumping{
+            display: block;
+            height: 250px;
+            border-radius: 25px;
+            transition-duration: 0.4s;
+        }
+        .womanjumping:hover{
+            transform: scale(1.2);
+        }
+        .one{
+            background:#052f31;
+            padding: 150px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: white;
+            font-family: noto sans symbols;
+            
+        }
+        .two{
+            background:linear-gradient(to right, rgba(0, 0, 0, 0.777), rgba(28, 27, 27, 0)),url(pexels-urtimud-16021274.jpg);
+            height: 75vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: white;
+            font-family: noto sans symbols;
+        }
+        .mountains{
+            display: block;
+            height: 250px;
+            border-radius: 25px;
+            transition-duration: 0.4s;
+            
+        }
+        .mountains:hover{
+            transform: scale(1.2);
+        }
+        .island{
+            display: block;
+            height: 250px;
+            border-radius: 25px;
+            transition-duration: 0.4s;
+        }
+        .island:hover{
+            transform: scale(1.2);
+        }
+        .three{
+            background: #044131;
+            padding: 150px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: white;
+            font-family: noto sans symbols;
+        }
+        .threeitemsend a{
+            text-decoration: none;
+            color: white;
+        }
+        .threeitemsend{
+            text-align: center;
+            word-spacing: 60px;
+            font-family: arial;
+            
+            padding: 20px;
+        }
+        .threeitemsend a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <div class="logo">
+                <img src="plane logo.png" class="planelogo">
+                <h1 class="travellogo">TRAVEL</h1>
+            </div>
+            <div class="threeitems">
+                <a href="index.html" class="home">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="content.html">CONTENT</a>
+            </div>
+            <div class="login">
+                <a href="login.html">Login</a>
+
+            </div>
+        </div>
+        <div class="quote">
+            <h2>
+                "The world is a book and <br>
+                those who do not travel <br>
+                only read one page."
+            </h2>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="scroll">
+            <P>SCROLL DOWN FOR MORE INFORMATION</P>
+            <img src="toppng.com-white-drop-down-arrow-423x265.png" class="arrowdown">
+        </div>
+
+    </div>
+    
+    <div class="one">
+        <img src="pexels-sebastian-arie-voortman-214574.jpg" class="womanjumping">
+        <h4>The ultimate travel experience! Get ready to embark on an unforgettable journey with us <br>
+            as we explore some of the world's most breathtaking destinations. <br> Immerse yourself in a new culture! <br>
+            Our purpose is to make your dreams alive. Chose between the best destinations!
+        </h4>
+    </div>
+    <div class="two">
+        <br>
+        <h4>
+            Make your dream destinations alive! Go whereever you want with us. <br>
+            Dive into the world of beaches or mountains. Our web site will help <br>
+            you decide your preferance.
+        </h4>
+        <img src="155081.jpg" class="mountains">
+
+    </div>
+    <div class="three">
+        <img src="1262634.jpg" class="island">
+        <h4>
+            Whether you're seeking a romantic retreat or a fun-filled family vacation, <br>
+            our island offers something for everyone. Enjoy swimming, snorkeling, <br> or simply lounging on the white sandy beaches. 
+        </h4>
+
+    </div>
+    <div class="threeitemsend">
+        <a href="index.html" class="home">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="content.html">CONTENT</a>
+    </div>
+
+</body>
+
+</html>
